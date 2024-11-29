@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #e5e7eb;
+}
+
+.time-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  background: #334155;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #f3f4f6;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#start {
+  background: #10b981;
+  color: #fff;
+}
+
+#start:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+#stop {
+  background: #ef4444;
+  color: #fff;
+}
+
+#stop:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+#reset {
+  background: #3b82f6;
+  color: #fff;
+}
+
+#reset:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .time-display {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
